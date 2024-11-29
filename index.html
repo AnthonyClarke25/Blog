@@ -1,44 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My blog</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/6c6d1c04ed.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1 class="homepage__title">Blog Header</h1>
 
+<body class="homepage">
     <nav class="homepage__nav">
-        <a href="/index.html" class="homepage__nav-link">Home</a>
-        <a href="/pages/about.html" class="homepage__nav-link">About</a>
+        <div class="homepage__nav-container">
+            <a href="/" class="homepage__nav-link">Home</a>
+            <a href="/pages/about.html" class="homepage__nav-link">About</a>
+            <a href="/blog" class="homepage__nav-link">Blog</a>
+            </div>
     </nav>
 
-      <main>
+    <h1 class="homepage__title">Blog Header</h1>
+    <main class="homepage__main">
+    
+    
+        <section class="bio">
+            <div class="bio__container">
+                <div class="bio__image-section">
+                    <figure class="bio__image-container">
+                        <img src="https://scontent-lhr8-1.xx.fbcdn.net/v/t31.18172-8/14682128_10154465795136136_6517185820924540050_o.jpg?_nc_cat=108&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=_V-Md-YkutIQ7kNvgE9iMio&_nc_zt=23&_nc_ht=scontent-lhr8-1.xx&_nc_gid=AHRRW7X-kWgVIFEXL8C8kxs&oh=00_AYC4bI76idz3PGgXkY9ijEKe20RNHUt8jZFwjTy1uAcL4g&oe=676F1C4E"
+                            alt="A profile shot of Anthony Clarke" loading="lazy" width="500" height="500"
+                            class="bio__image">
+                    </figure>
+                </div>
+                <div class="bio__content-section">
+                    <h2 class="bio__title">Anthony Clarke</h2>
+                    <p class="bio__text">Hi i'm Anthony, i'm a front end web developer, with an interest in music, gaming,
+                        wrestling and movies. Feel free to contact me using one of the my socials below to get in touch and
+                        let's create something awesome</p>
+                </div>
+    
+                <div class="bio__social-section">
+                    <a href="/" class="bio__social bio__social--linkedin" aria-label="linkedin"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="/" class="bio__social bio__social--twitter" aria-label="twitter"><i
+                            class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="/" class="bio__social bio__social--youtube" aria-label="youtube"><i
+                            class="fa-brands fa-square-youtube"></i></a>
+                    <a href="mailto:anthonyjames.clarke@gmail.com" class="bio__social bio__social--email"
+                        aria-label="email"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+
         <section class="posts">
             <article class="posts__post">
-                <h2 class="post__title"> <a href="/pages/post.html" class="post__link"> Blog title 1</a></h2>
+                <h2 class="post__title"> <a href="/Blog/pages/post.html" class="post__link"> Blog title 1</a></h2>
 
                 <p class="post__text">Summary of blog post 1</p>
             </article>
 
             <article class="posts__post">
-                <h2 class="post__title"> <a href="/pages/post.html" class="post__link"> Blog title 2</a></h2>
+                <h2 class="post__title"> <a href="/Blog/pages/post.html" class="post__link"> Blog title 2</a></h2>
 
                 <p class="post__text">Summary of blog post 2</p>
             </article>
 
-            
+
         </section>
-      </main>
+    </main>
 
-      <footer class="footer">
+    <footer class="footer">
         <p class="footer__text">&copy; 2024 my blog</p>
-      </footer>
+    </footer>
 
 
-      <script src="/js/scripts.js"></script>
+    <script src="/js/scripts.js"></script>
 
 
 </body>
+
 </html>
